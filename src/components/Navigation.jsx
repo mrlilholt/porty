@@ -7,6 +7,7 @@ const Navigation = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [showHomeIcon, setShowHomeIcon] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -22,6 +23,10 @@ const Navigation = () => {
         setIsNavVisible(false);
       }
     }
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
   };
 
   useEffect(() => {
@@ -64,7 +69,12 @@ const Navigation = () => {
         )}
       </div>
 
-      <div className={`nav-links ${!isNavVisible ? "hidden" : ""}`}>
+      {/* Hamburger menu shown on mobile */}
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        &#9776; {/* Unicode hamburger icon */}
+      </div>
+
+      <div className={`nav-links ${!isNavVisible ? "hidden" : ""} ${menuOpen ? "active" : ""}`}>
         <a onClick={() => handleScrollToSection("home")}>Home</a>
         <a onClick={() => handleScrollToSection("projects")}>Projects</a>
         <a onClick={() => handleScrollToSection("about")}>About</a>

@@ -72,6 +72,8 @@
     width: 100%;
     padding: 10px;
     font-size: 0.9rem;
+    min-width: 0;    /* override the default min-width */
+    box-sizing: border-box; /* ensure padding doesn't add extra width */
   }
 }
 

@@ -194,23 +194,27 @@
     display: none;
   }
   
+  /* Use block layout with full width and left-justified text for timeline items */
   .timeline-item {
+    display: block;
     width: 100%;
     padding: 1rem;
     text-align: left;
     position: relative;
   }
   
-  /* Reset timeline items to stack vertically */
+  /* Remove left/right positioning and force left alignment */
   .timeline-item.left,
   .timeline-item.right {
     left: 0;
+    text-align: left;
   }
   
   .timeline-item .content {
     margin: 0;
   }
   
+  /* Position the dot on the left consistently */
   .timeline-item .dot {
     position: absolute;
     left: 10px;

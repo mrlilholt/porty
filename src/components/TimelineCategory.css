@@ -115,6 +115,8 @@
   .timeline-category-card {
     padding: 1rem;
     margin: 0.5rem;
+    width: 100%;              /* Ensures the card doesn't extend past the container */
+    box-sizing: border-box;   /* Includes padding in element's total width */
   }
   
   .timeline-category-title {

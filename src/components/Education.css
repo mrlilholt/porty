@@ -108,3 +108,55 @@
 .timeline-item.right .dot {
   left: -10px;
 }
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .education-section {
+    padding: 2rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Make timeline container full width and remove center line */
+  .timeline {
+    max-width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+  }
+  
+  .timeline::before {
+    display: none;
+  }
+  
+  /* Convert timeline items to a block layout that is left-justified */
+  .timeline-item {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+  }
+  
+  /* Remove left/right positioning so all items are left aligned */
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+  
+  /* Remove extra content margins */
+  .timeline-item .content {
+    margin: 0;
+  }
+  
+  /* Position the dot consistently to the left */
+  .timeline-item .dot {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    right: auto;
+  }
+}
