@@ -93,6 +93,11 @@
   display: none;
 }
 
+/* Hide hamburger by default on desktop */
+.hamburger-menu {
+  display: none;
+}
+
 /* Responsive adjustments for mobile devices */
 @media (max-width: 768px) {
   .navigation {
@@ -102,10 +107,23 @@
     transform: none;
     width: 100%;
     padding: 0.75rem 1rem;
-    background-color: rgba(255, 255, 255, 0.9); /* give a subtle background for readability */
+    background-color: rgba(255, 255, 255, 0.9); /* subtle background for readability */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
-  /* Hide regular nav-links */
+  /* Position the hamburger on the left and color it black */
+  .hamburger-menu {
+    display: inline-block;   /* now visible on mobile */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000;
+    order: -1;              /* Moves it before the logo */
+    margin-right: 1rem;      /* Space between hamburger and logo */
+  }
+  
+  /* Hide regular nav-links until activated */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -119,21 +137,15 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   
-  /* When active, show nav links as a dropdown */
+  /* When active, show nav links as a dropdown with black text */
   .nav-links.active {
     display: flex;
-  }
-  
-  /* Hamburger menu styling */
-  .hamburger-menu {
-    display: inline-block;
-    cursor: pointer;
-    font-size: 1.5rem;
   }
   
   .nav-links a {
     margin-left: 0;
     font-size: 0.9rem;
+    color: #000;            /* Force link text to black on mobile */
   }
   
   .logo-image {
