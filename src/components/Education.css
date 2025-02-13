@@ -112,7 +112,8 @@
 /* Responsive adjustments for mobile devices */
 @media (max-width: 768px) {
   .education-section {
-    padding: 2rem 1rem;
+    /* Reduce side padding to nearly zero so it stretches edge-to-edge */
+    padding: 2rem 0.5rem;
   }
   
   .section-title {

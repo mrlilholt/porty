@@ -36,9 +36,8 @@
 .hero-content {
   position: relative;
   z-index: 1; /* ensure content is above video or background */
-  padding: 0 0rem;
+  padding: 4rem 0rem; /* default horizontal padding removed */
   text-align: center;
-  padding-top: 4rem; /* Adjust so the hero text sits below the nav */
 }
 
 .hero-title {
@@ -87,7 +86,7 @@
 /* Responsive adjustments for landscape phones/tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .hero-content {
-    padding-top: 3rem;
+    padding: 3rem 0.5rem; /* minimal side padding on mobile */
   }
   
   .hero-title {
@@ -106,6 +105,10 @@
 
 /* Additional adjustments for small devices (max-width: 480px) */
 @media (max-width: 480px) {
+  .hero-content {
+    padding: 2rem 0.5rem; /* minimal side padding on small devices */
+  }
+  
   .hero-title {
     font-size: 3rem;
   }

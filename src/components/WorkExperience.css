@@ -165,7 +165,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .work-experience-section {
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;  /* minimal side padding for full-width appearance on mobile */
   }
   
   .work-experience-title {

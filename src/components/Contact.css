@@ -1,75 +1,83 @@
 .contact-section {
-    width: 100%;
-    max-width: 800px; /* match other sections for consistency */
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    text-align: center; 
+  width: 100%;
+  max-width: 800px; /* match other sections for consistency */
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center; 
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the entire form content */
+  gap: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px; /* form itself won't exceed 600px wide */
+}
+
+/* Each label–input pair stacked vertically */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Label above input */
+.contact-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+/* Inputs & textareas fill the .form-group width */
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Center the button in the form */
+.contact-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  align-self: center;
+}
+
+.contact-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 0.5rem;  /* Minimal side padding for mobile */
+    max-width: 100%;
+    margin: 0;
   }
-  
-  .contact-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .contact-intro {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* center the entire form content */
-    gap: 1.5rem;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px; /* form itself won't exceed 600px wide */
-  }
-  
-  /* Each label–input pair stacked vertically */
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  /* Label above input */
-  .contact-label {
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-    text-align: left; /* or keep it center if you prefer */
-  }
-  
-  /* Inputs & textareas fill the .form-group width */
-  .contact-input,
-  .contact-textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-family: inherit;
-    background-color: #222; /* if you have a dark theme */
-    color: #fff;            /* text color on dark BG */
-  }
-  
-  /* Center the button in the form */
-  .contact-btn {
-    padding: 0.75rem 1.5rem;
-    border: 2px solid #ffffff;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
-    align-self: center; /* ensure it's centered horizontally */
-  }
-  
-  .contact-btn:hover {
-    background-color: #000;
-    color: #fff;
-  }
-  
+}

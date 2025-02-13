@@ -141,7 +141,7 @@
 /* For screens up to 1024px */
 @media (max-width: 1024px) {
   .projects-section {
-    padding: 3.5rem 1.5rem;
+    padding: 3.5rem 0;  /* Remove horizontal padding */
   }
   
   .projects-heading {
@@ -167,7 +167,7 @@
 /* For screens up to 768px */
 @media (max-width: 768px) {
   .projects-section {
-    padding: 3rem 1rem;
+    padding: 3rem 0;  /* Minimal side padding for mobile */
   }
   
   .projects-heading {
@@ -189,7 +189,7 @@
 /* For screens up to 480px */
 @media (max-width: 480px) {
   .projects-section {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0;  /* Nearly edge-to-edge content on small devices */
   }
   
   .projects-heading {
