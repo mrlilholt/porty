@@ -29,6 +29,11 @@ const Navigation = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  const handleMenuItemClick = () => {
+    // Close the mobile menu when a menu item is selected
+    setMenuOpen(false);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -75,12 +80,12 @@ const Navigation = () => {
       </div>
 
       <div className={`nav-links ${!isNavVisible ? "hidden" : ""} ${menuOpen ? "active" : ""}`}>
-        <a onClick={() => handleScrollToSection("home")}>Home</a>
-        <a onClick={() => handleScrollToSection("projects")}>Projects</a>
-        <a onClick={() => handleScrollToSection("about")}>About</a>
-        <a onClick={() => handleScrollToSection("work")}>Work Experience</a>
-        <a onClick={() => handleScrollToSection("education")}>Education</a>
-        <a onClick={() => handleScrollToSection("contact")}>Contact</a>
+        <a onClick={() => { handleScrollToSection("home"); handleMenuItemClick(); }}>Home</a>
+        <a onClick={() => { handleScrollToSection("projects"); handleMenuItemClick(); }}>Projects</a>
+        <a onClick={() => { handleScrollToSection("about"); handleMenuItemClick(); }}>About</a>
+        <a onClick={() => { handleScrollToSection("work"); handleMenuItemClick(); }}>Work Experience</a>
+        <a onClick={() => { handleScrollToSection("education"); handleMenuItemClick(); }}>Education</a>
+        <a onClick={() => { handleScrollToSection("contact"); handleMenuItemClick(); }}>Contact</a>
       </div>
     </nav>
   );
