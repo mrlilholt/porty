@@ -21,14 +21,16 @@
   margin: 0 auto; 
 }
 
-/* Switch to two columns starting at 768px (tablet-ish) */
+/* For tablet and larger screens: use grid layout for two columns */
 @media (min-width: 768px) {
   .timeline-cards-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
-/* Ensure all non-title text inside timeline cards is left aligned */
+/* Ensure non-title text inside timeline cards is left aligned */
 .timeline-cards-container p,
 .timeline-cards-container li,
 .timeline-cards-container span {
@@ -39,13 +41,13 @@
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  flex: 1 1 calc(33.333% - 20px);
+  flex: 1 1 calc(33.333% - 20px); /* fallback for flex display */
   min-width: 250px;
   display: grid;
   grid-template-columns: 150px 1fr; /* 150px reserved for the date; adjust as needed */
   gap: 1rem;
   align-items: start;
-  border-bottom: 1px solid #ddd; /* optional divider */
+  border-bottom: 1px solid #ddd; /* divider */
 }
 
 /* Mobile-specific styles */
@@ -60,6 +62,7 @@
   }
   
   .timeline-cards-container {
+    display: flex;
     flex-direction: column;
     gap: 15px;
   }
@@ -69,5 +72,22 @@
     width: 100%;
     padding: 10px;
     font-size: 0.9rem;
+  }
+}
+
+/* Additional adjustments for very small screens (portrait phones) */
+@media (max-width: 480px) {
+  .timeline-section {
+    padding: 15px;
+  }
+  
+  .timeline-section-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-card {
+    padding: 8px;
+    font-size: 0.8rem;
   }
 }

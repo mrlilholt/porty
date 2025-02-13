@@ -161,3 +161,59 @@
 .timeline-item.right .dot {
   left: -10px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .work-experience-section {
+    padding: 2rem 1rem;
+  }
+  
+  .work-experience-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .work-item-header {
+    grid-template-columns: 1fr;  /* Stack header items vertically */
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .work-item-role,
+  .work-item-organization {
+    text-align: center;
+  }
+  
+  .timeline {
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+  
+  /* Hide center line on mobile */
+  .timeline::before {
+    display: none;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    position: relative;
+  }
+  
+  /* Reset timeline items to stack vertically */
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+  
+  .timeline-item .content {
+    margin: 0;
+  }
+  
+  .timeline-item .dot {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+}
