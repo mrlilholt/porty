@@ -44,9 +44,10 @@ html {
   scroll-behavior: smooth;
 }
 .container {
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  padding: 0 20px;
 }
 @media (max-width: 768px) {
   .hero-title {
@@ -54,5 +55,24 @@ html {
   }
   .hero-subtitle {
     font-size: 1.25rem;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .hero {
+    padding: 20px;
+    text-align: center;
+  }
+  section {
+    margin: 20px 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
