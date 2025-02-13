@@ -8,7 +8,7 @@ const workExperienceData = [
     organization: "Middle School DREAM Lab",
     description:
       "Implemented and crafted the Middle School DREAM® Lab curriculum. Oversaw approximately 100 6th, 7th, and 8th grade female students. As Department Chair, oversaw and developed the CS& Engineering program to include 3 new courses in the span of 2 years.",
-    link: "https://example.com/dreamlab",
+    link: "https://www.baldwinschool.org/academics/dream-lab",
   },
   {
     role: "Environmental Engineering & Design",
@@ -16,7 +16,7 @@ const workExperienceData = [
     organization: "Green Woods Charter School",
     description:
       "Designed and implemented an Environmental Engineering & Design curriculum. Oversaw approximately 150 7th and 8th grade students.",
-    link: "https://example.com/greenwoods",
+    link: "https://www.greenwoodscharter.org/",
   },
   {
     role: "3-8 Science Teacher",
@@ -31,7 +31,7 @@ Developed differentiated lesson plans to reach every student and their learning 
 Worked one-on-one with students to build action plans for improvement.
 
 Collaborated with team teachers, administrators, and parents to support student development.`,
-    link: "https://example.com/greenwoods",
+    link: "https://www.greenwoodscharter.org/",
   },
   {
     role: "Founder",
@@ -44,7 +44,7 @@ Established a comprehensive business plan including target demographics, risk fa
 Developed client relationships through networking, strategic sales, search engine marketing, and optimization.
 
 Managed over 50 websites and doubled business in one year.`,
-    link: "https://example.com/lilholttech",
+    link: "https://www.lilholttechnologysolutionsllc.com/",
   },
   {
     role: "Manager",
@@ -55,7 +55,7 @@ Managed over 50 websites and doubled business in one year.`,
 Oversaw 60% of total store sales ($2 million per month) while managing 11 employees including 3 department managers.
 
 Developed workflow processes to maximize efficiency and boost employee morale.`,
-    link: "https://example.com/restaurantdepot",
+    link: "https://www.restaurantdepot.com/",
   },
 ];
 
