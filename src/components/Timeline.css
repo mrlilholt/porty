@@ -1,5 +1,5 @@
 .timeline-section {
-    padding: 4rem 2rem;
+    padding: 40px;
     background-color: #fff;
     color: #000;
     max-width: 1200px;
@@ -9,14 +9,13 @@
   .timeline-section-title {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
   }
   
   .timeline-cards-container {
-    display: grid;
-    gap: 1.5rem; /* space between cards */
-    /* By default, a single column on narrow screens: */
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto; 
   }
@@ -36,11 +35,15 @@
   }
 
 .timeline-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
   display: grid;
   grid-template-columns: 150px 1fr; /* 150px reserved for the date; adjust as needed */
   gap: 1rem;
   align-items: start;
-  padding: 1rem;
   border-bottom: 1px solid #ddd; /* optional divider */
 }
 
@@ -51,4 +54,27 @@
 
 .timeline-card-content {
   text-align: left; /* ensures all text/links starts at same vertical line */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .timeline-section {
+    padding: 20px;
+  }
+  
+  .timeline-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .timeline-cards-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .timeline-card {
+    flex: 1 1 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 }
