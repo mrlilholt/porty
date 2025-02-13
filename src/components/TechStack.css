@@ -27,3 +27,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
 }
+
+.tech-stack-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
