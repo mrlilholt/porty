@@ -1,0 +1,29 @@
+.tech-stack-section {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-stack-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tech-stack-item {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}

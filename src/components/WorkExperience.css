@@ -1,0 +1,163 @@
+.work-experience-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #333;
+  position: relative;
+}
+
+.work-experience-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.work-experience-item {
+  display: grid;
+  gap: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.work-item-header {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.work-item-role {
+  font-weight: bold;
+  text-align: right;
+}
+
+.work-item-organization {
+  font-style: italic;
+  text-align: left;
+}
+
+.work-item-description p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Timeline container with vertical center line */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* The vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+/* Timeline item base styles */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+/* Dot at the center line */
+.timeline-item .dot {
+  position: absolute;
+  top: 20px;
+  right: -10px; /* default for left side; adjusted in .right */
+  width: 20px;
+  height: 20px;
+  background: #0077ff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Content container */
+.timeline-item .content {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and date styles */
+.item-title {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.item-date {
+  display: block;
+  font-size: 1.25rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+/* Description styles */
+.item-description {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+/* Link style for the employer */
+.item-link {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.item-link:hover {
+  color: #0056b3;
+}
+
+/* Position timeline items on left */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.left .content {
+  margin-right: 30px;
+}
+
+/* Adjust dot for left side items */
+.timeline-item.left .dot {
+  right: -10px;
+}
+
+/* Position timeline items on right */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item.right .content {
+  margin-left: 30px;
+}
+
+/* Adjust dot for right side items */
+.timeline-item.right .dot {
+  left: -10px;
+}

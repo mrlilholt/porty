@@ -1,0 +1,54 @@
+.about-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fafafa; /* Adjust color as needed */
+    color: #000;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-text {
+    line-height: 1.6;
+    font-size: 1rem;
+    max-width: 800px;
+    text-align: left; /* or center if you prefer */
+  }
+
+/* Center align and style section titles and h3 headings */
+.section-title,
+.about-text h3 {
+  text-align: center;
+  font-size: 2em;       /* Increase font size for added prominence */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Increase spacing between paragraphs */
+.about-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Optionally, add margin for ul lists */
+.about-text ul {
+  margin-bottom: 1.5rem;
+}
+
+.about-quote {
+  border-left: 4px solid #ccc;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+}

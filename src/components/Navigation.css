@@ -1,0 +1,94 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+/* Hide navigation links when not visible */
+.navigation.hidden-nav .nav-links {
+  opacity: 0;
+  transform: translateY(-20px); /* Slide up slightly */
+  pointer-events: none;         /* Disable clicks when hidden */
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-image {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover .logo-image {
+  transform: scale(1.1);
+}
+
+/* Style for the Material home icon displayed next to logo */
+.home-icon {
+  margin-left: 10px;
+  font-size: 24px;
+  color: black;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  /* Start hidden */
+  opacity: 0;
+}
+
+/* Expand the icon on hover */
+.home-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Fade in animation */
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-links a {
+  cursor: pointer;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #535bf2;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}

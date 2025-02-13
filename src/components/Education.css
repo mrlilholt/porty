@@ -1,0 +1,110 @@
+.education-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #333;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Timeline container with a vertical center line */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+/* Dot on the timeline */
+.timeline-item .dot {
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: #0077ff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Content container */
+.timeline-item .content {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title, description, and link styles */
+.item-title {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.item-description {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.item-link {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.item-link:hover {
+  color: #0056b3;
+}
+
+/* Positioning for left-aligned items */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.left .content {
+  margin-right: 30px;
+}
+
+.timeline-item.left .dot {
+  right: -10px;
+}
+
+/* Positioning for right-aligned items */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item.right .content {
+  margin-left: 30px;
+}
+
+.timeline-item.right .dot {
+  left: -10px;
+}

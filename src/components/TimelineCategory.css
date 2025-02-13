@@ -1,0 +1,112 @@
+.timeline-category-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    flex: 1; /* if using a flex or grid layout */
+  }
+  
+  .timeline-category-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .timeline-category-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .timeline-item {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd; /* optional divider */
+  }
+  
+  .timeline-item-header {
+    display: grid;
+    /* Adjust the first column to remain fixed (150px) and let the second column grow with a minimum value */
+    grid-template-columns: 150px minmax(200px, 1fr);
+    gap: 1rem;
+  }
+  
+  .timeline-item-date {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1rem;           /* extra spacing between date and title */
+    line-height: 1.5;
+  }
+  
+  .timeline-item-content {
+    text-align: left;              /* ensures title is aligned on the right column */
+    line-height: 1.5;
+  }
+  
+  .timeline-item-content a {
+    display: inline-block;
+    width: 100%;
+    word-break: normal;
+    overflow-wrap: break-word;
+    color: #0077ff;
+    text-decoration: none;
+  }
+
+  .timeline-item-content a:hover {
+    border-bottom-color: currentColor;
+  }
+  
+  .timeline-toggle-btn {
+    margin-top: 1rem;
+    background-color: #0077ff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .timeline-toggle-btn:hover {
+    background-color: #0055cc; 
+  }
+
+.timeline-item-link-btn {
+  padding: 0.5rem 1rem;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.timeline-item-link-btn:hover {
+  background-color: #0055cc;
+}
+
+.timeline-link-container {
+  grid-column: 1 / 2; /* positions the container in the first column */
+  text-align: center;
+  margin-top: 0.5rem; /* add spacing above the button if desired */
+}
+
+.timeline-item-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: border-bottom-color 0.2s ease;
+  
+  white-space: normal;     /* allow wrapping at spaces */
+  word-break: normal;      /* do not break words arbitrarily */
+  overflow-wrap: normal;   /* ensure words wrap only at natural break points */
+}
+
+.timeline-item-link:hover {
+  border-bottom-color: currentColor;
+}
