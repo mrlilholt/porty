@@ -9,6 +9,7 @@ import project5 from '../assets/project5.png'; // relative path from your compon
 import project6 from '../assets/project6.png'; // relative path from your component to the file
 import project7 from '../assets/project7.png'; // relative path from your component to the file
 import project8 from '../assets/project8.jpg'; // relative path from your component to the file
+import project9 from '../assets/project9.png'; // relative path from your component to the file
 
 const projectData = [
   {
@@ -24,6 +25,13 @@ const projectData = [
     techStack: ["Vue", "Express", "MySQL"],
     link: "https://mushroomradio.netlify.app/",
     screenshot: project2,
+  },
+  {
+    name: "Lilholt Help Desk",
+    description: "An AI Teaching Assistant with customized AI systems for student-project help.",
+    techStack: ["Anthropic API", "HTML5", "CSS3", "JavaScript"],
+    link: "https://videogamehelpdesk.netlify.app/",
+    screenshot: project9,
   },
   {
     name: "Complete Deck and Pergola Build",
